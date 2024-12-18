@@ -1,0 +1,120 @@
+#Napiši program u kojem ćeš izračunati i ispisati površinu kruga polumjera 5cm.
+
+#prvi zadatak
+'''
+r = 5
+pi = 3.14
+
+p = r * r * pi
+print("povrsina kruga je:", p) 
+'''
+
+#Napiši program koji od korisnika traži unos duljine 2 stranice pravokutnika.
+#Ukoliko su stranice jednake, ispisati: Unijeli ste kvadrat.
+#U slučaju da je unesen broj manji od 0 ispisati "Jedna stranica je manja od 0".
+#Ako je prva stranica veća od druge,
+#ispisati opseg, inače ispisati površinu tog pravokutnika.
+
+
+#drugi zadatak
+
+'''
+a = int(input("unesi duljinu prve stranice pravokutnika:"))
+b = int(input("unesi duljinu druge stranice pravokutnika:"))
+
+if a == b:
+    print("unijeli ste kvadrat")
+    
+elif a < 0:
+    print("uneseni broj je manji od nula")
+
+elif b < 0:
+    print("uneseni broj je manji od nula")
+
+elif a > b:
+    O = 2 * (a + b)
+    print("opseg pravokutnika je:", O)
+
+else:
+    P = a * b
+    print("povrsina pravokutnika je:", P)
+'''
+
+#Napisati program u Pythonu koji će učitavati 10 brojeva.
+#Naći i ispisati aritmetičku sredinu učitanih brojeva
+#uzimajući u obzir samo one brojeve koji su veći ili
+#jednaki 2 i manji ili jednaki 5.
+
+#treci zadatak
+
+'''
+zbroj = 0
+brojac = 0
+for i in range(10):
+    broj = int(input("Unesite broj:"))
+    if broj >= 2 and broj <= 5:
+        zbroj += broj
+        brojac += 1
+
+
+print("Aritmeticka sredina je:", zbroj/brojac)
+'''
+
+#Zadatak 4.
+#Napisati program koji od korisnika traži unos troznamenkastog broja.
+#Nakon toga provjeriti je zadnja znamenka tog broja djeljiva s 3.
+#Ukoliko korisnik ne unese troznamenkasti broj, ispisati da je unos pogrešan.
+
+'''
+while 1:
+  unos = int(input("Unesi troznamenkasti broj:"))
+  if (unos > 99 and unos < 1000):
+    break
+  else:
+    print("Pogresan unos.")  
+    
+if unos % 3 == 0:
+  print("Uneseni broj je djeljiv s 3.")
+else:
+  print("Uneseni broj nije djeljiv s 3.") 
+'''
+
+#Zadatak 5.
+#Napišite program koji će ispisati sve brojeve od 1 do 10,
+#a za svaki broj ispisati ako je paran ili neparan.
+
+
+'''
+
+for i in range(1, 11, 1):
+        if i % 2 == 0:
+                print(i, "je paran")
+        else:
+                print(i, " je neparan")
+'''
+
+#Zadatak 6.
+#Napišite program koji će ispisati sve troznamenkaste brojeve
+#koji su djeljivi sa 7.
+
+
+'''
+for i in range(100, 1000, 1):
+        if i % 7 == 0:
+                print(i, "je djeljiv sa 7") 
+'''
+#Zadatak 7.
+#Napišite program koji će ispisati sve brojeve od 1 do 20,
+#a za svaki broj ispisati ako je djeljiv sa 3 ili sa 5.
+
+'''
+for i in range(1, 21, 1):
+        if i % 3 == 0 and i % 5 == 0:
+            print(i, " je deljiv sa 3 i sa 5")
+        elif i % 5 == 0:
+                print(i, "je djeljiv sa 5")
+        elif i % 3 == 0:
+                print(i, "je djeljiv sa 3")
+        else
+            print("broj nije dijeljiv ni sa 3 ni sa 5") 
+'''
